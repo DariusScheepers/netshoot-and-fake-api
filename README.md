@@ -23,13 +23,13 @@ If you want to test your faker from your host then you may port forward the pod:
 ```
 kubectl port-forward my-faker 3030:3030
 ```
-## Step 4: Get the my-faker pod's ip
+## Step 3: Get the my-faker pod's ip
 You will see it listed as the value to the IP key when you run:
 ```
 kubectl describe pod my-faker
 ```
 
-## Step 5: Run a curl command from within the netshoot pod
+## Step 4: Run a curl command from within the netshoot pod
 [nicolaka/netshoot](https://github.com/nicolaka/netshoot) is an awesome tool to troubleshoot your cluster network. We will simply use it to curl the faker pod.
 First run the container:
 ```
